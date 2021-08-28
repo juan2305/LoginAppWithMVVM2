@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica1LoginApp.Views.SignUpPage"
+             Title="{Binding PropertiesItems.TitlePage}">
+    <ContentPage.Content>
+        <StackLayout Padding="20" x:Name="MasterLayout">
+            <Image Source="logolatin.png"
+               Margin="0,80,0,0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"></Image>
+            <Label Text="{Binding PropertiesItems.TitleUsername}"></Label>
+            <Entry Text="{Binding Person.Name}" Placeholder="{Binding PropertiesItems.TitleUsername}"></Entry>
+            <Label Text="{Binding PropertiesItems.TitlePassword}"></Label>
+            <Entry Text="{Binding Person.Pass, Mode=TwoWay}" Placeholder="{Binding PropertiesItems.TitlePassword}" IsPassword="true"></Entry>
+
+            <Button
+                   Command="{Binding Signupbtn}"
+                   Text="{Binding PropertiesItems.SignUpText}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

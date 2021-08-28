@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica1LoginApp.Views.HomePage"
+             Title="{Binding PropertiesItems.TitlePage}">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Padding="15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Frame Grid.Column="0" Grid.Row="0">
+                    <StackLayout>
+                        <Image Source="{Binding MenuOptions.BarImage}" />
+                        <Label  Text="{Binding MenuOptions.Title}" HorizontalTextAlignment="Center" />
+                    </StackLayout>
+                </Frame>
+                <Frame Grid.Column="1" Grid.Row="0">
+                    <StackLayout>
+                        <Image Source="{Binding MenuOptions.FoodImage}" />
+                        <Label  Text="{Binding MenuOptions.FoodTitle}" HorizontalTextAlignment="Center" />
+                    </StackLayout>
+                </Frame>
+                <Frame Grid.Column="0" Grid.Row="1">
+                    <StackLayout
+                            Grid.Column="1"
+                            Grid.Row="0">
+                        <Image Source="{Binding MenuOptions.HealthyImage}" />
+                        <Label  Text="{Binding MenuOptions.HealthyTitle}" HorizontalTextAlignment="Center" />
+                    </StackLayout>
+                </Frame>
+                <Frame Grid.Column="1" Grid.Row="1">
+                    <StackLayout
+                            Grid.Column="1"
+                            Grid.Row="0">
+                        <Image Source="{Binding MenuOptions.DrinksImage}" />
+                        <Label  Text="{Binding MenuOptions.DrinksTitle}" HorizontalTextAlignment="Center" />
+                    </StackLayout>
+                </Frame>
+                <Frame Grid.Column="0" Grid.Row="2">
+                    <StackLayout
+                            Grid.Column="1"
+                            Grid.Row="0">
+                        <Image Source="{Binding MenuOptions.DessertImage}" />
+                        <Label  Text="{Binding MenuOptions.DessertTitle}" HorizontalTextAlignment="Center" />
+                    </StackLayout>
+                </Frame>
+                <Frame Grid.Column="1" Grid.Row="2">
+                    <StackLayout
+                            Grid.Column="1"
+                            Grid.Row="0">
+                        <Image Source="{Binding MenuOptions.CoffeeImage}" />
+                        <Label  Text="{Binding MenuOptions.CoffeeTitle}" HorizontalTextAlignment="Center" />
+                    </StackLayout>
+                </Frame>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
